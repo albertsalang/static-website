@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/favicon.png" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/mediaqueries.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<title>Marquins Boatshoes</title>
+	</head>
+	<body>
+		<!-- sales promotion slider -->
+
+		<!-- header -->
+		<header>
+			<section id="sales-promotion">
+				<div class="sales-promotion-slider">
+					<p>Free shipping nationwide</p>
+					<p>Up to 50% off to selected items</p>
+					<p>Same day delivery & COD available</p>
+				</div>
+				<button onclick="closeSalesPromotion()">&times;</button>
+			</section>
+
+			<!-- navigation -->
+			<nav id="nav">
+				<button
+					id="btn-open-nav-menu"
+					onclick="displayNavigationMenu(),hideCategoryMenu()"
+				>
+					<i class="fal fa-bars"></i>
+				</button>
+				<button id="btn-close-nav-menu" onclick="hideNavigationMenu()">
+					<i class="fal fa-times"></i>
+				</button>
+				<a href="#"><img src="img/marquins-logo.png" alt="marquins-logo" /></a>
+				<button><i class="fal fa-shopping-cart"></i></button>
+				<div id="nav-menu">
+					<button id="btn-login" onclick="openLoginContainer()">Log in</button>
+					<a href="#"><button onclick="hideNavigationMenu()">Home</button></a>
+					<a href="#marquins-branding"
+						><button onclick="hideNavigationMenu()">Our branding</button></a
+					>
+					<a href="#featured-products"
+						><button onclick="hideNavigationMenu()">
+							Featured products
+						</button></a
+					>
+					<div class="nav-category-container">
+						<button id="btn-product-category" onclick="displayCategoryMenu()">
+							Product category<i class="far fa-chevron-down"></i>
+						</button>
+						<button
+							id="btn-close-product-category"
+							onclick="hideCategoryMenu()"
+						>
+							Product category<i class="far fa-chevron-up"></i>
+						</button>
+						<div
+							id="nav-category-inner-container"
+							class="nav-category-inner-container"
+						>
+							<a href="#"><button>Boatshoes</button></a>
+							<a href="#"><button>Loafer</button></a>
+							<a href="#"><button>Boots</button></a>
+							<a href="#"><button>Slippers</button></a>
+						</div>
+					</div>
+					<a href="#"
+						><button onclick="hideNavigationMenu()">For women</button></a
+					>
+					<a href="#"
+						><button onclick="hideNavigationMenu()">For men</button></a
+					>
+					<a href="#footer"
+						><button onclick="hideNavigationMenu()">About us</button></a
+					>
+				</div>
+			</nav>
+		</header>
+
+		<!-- main content -->
+		<main id="main">
+			<!-- introduction carousel -->
+			<section id="intro-carousel" class="slider">
+				<div class="slides">
+					<input type="radio" name="radio-btn" id="radio1" checked />
+					<input type="radio" name="radio-btn" id="radio2" />
+					<input type="radio" name="radio-btn" id="radio3" />
+					<input type="radio" name="radio-btn" id="radio4" />
+					<div class="slide first">
+						<img src="img/intro-carousel/cover1.jpg" alt="leather shoes" />
+						<p>
+							Smart styling. Extra comfort.
+							<br />
+							<a href="#">Shop now</a>
+						</p>
+					</div>
+					<div class="slide">
+						<img src="img/intro-carousel/cover2.jpg" alt="leather shoes" />
+						<p>
+							Footwear to last you a lifetime.
+							<br />
+							<a href="#">Shop now</a>
+						</p>
+					</div>
+					<div class="slide">
+						<img src="img/intro-carousel/cover3.jpg" alt="leather shoes" />
+						<p>
+							Designed with perfection.
+							<br />
+							<a href="#">Shop now</a>
+						</p>
+					</div>
+					<div class="slide">
+						<img src="img/intro-carousel/cover4.JPG" alt="leather shoes" />
+						<p>
+							Quality shoes made easy.
+							<br />
+							<a href="#">Shop now</a>
+						</p>
+					</div>
+					<div class="navigation-auto">
+						<div class="auto-btn1"></div>
+						<div class="auto-btn2"></div>
+						<div class="auto-btn3"></div>
+						<div class="auto-btn4"></div>
+					</div>
+					<div class="navigation-manual">
+						<label for="radio1" class="manual-btn"></label>
+						<label for="radio2" class="manual-btn"></label>
+						<label for="radio3" class="manual-btn"></label>
+						<label for="radio4" class="manual-btn"></label>
+					</div>
+				</div>
+			</section>
+
+			<!-- marquin's branding -->
+			<section id="marquins-branding">
+				<h2>Marquins' Branding</h2>
+				<div class="branding-content">
+					<div>
+						<i class="fal fa-hammer-war fa-3x"></i>
+						<h3>Top Quality Materials and Craftmanship</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+							tempore quo consectetur fugiat labore libero eaque dolorem!
+							Debitis, facere ab.
+						</p>
+					</div>
+					<div>
+						<i class="fal fa-tags fa-3x"></i>
+						<h3>Affordable Casual and Formal Leather Shoes</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+							tempore quo consectetur fugiat labore libero eaque dolorem!
+							Debitis, facere ab.
+						</p>
+					</div>
+					<div>
+						<i class="far fa-shoe-prints fa-3x"></i>
+						<h3>
+							Designed by Filipino Craftsmen with World-Class Shoe Making
+							Skills.
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+							tempore quo consectetur fugiat labore libero eaque dolorem!
+							Debitis, facere ab.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- featured product section -->
+			<section id="featured-products">
+				<h2>Featured Products</h2>
+				<div class="featured-products-slider">
+					<div class="cards">
+						<a class="card" href="#">
+							<img src="img/aston-black.jpg" alt="Aston Black" />
+							<h5 class="new-arrival">New arrival</h5>
+							<h5 class="product-name">Aston-Black</h5>
+						</a>
+						<a class="card" href="#">
+							<img
+								src="img/boatshoes-cobaltblue.jpg"
+								alt="Boatshoes Cobalt Blue"
+							/>
+							<h5 class="new-arrival">New arrival</h5>
+							<h5 class="product-name">Boatshoes - Cobalt Blue</h5>
+						</a>
+						<a class="card" href="#">
+							<img src="img/trevor-cognacbrown.jpg" alt="Trevor Cognac Brown" />
+							<h5 class="new-arrival">New arrival</h5>
+							<h5 class="product-name">Trevor-Cognac Brown</h5>
+						</a>
+						<a class="card" href="#">
+							<img src="img/scout-armygreen.jpg" alt="Scout Army Green" />
+							<h5 class="new-arrival">New arrival</h5>
+							<h5 class="product-name">Scout-Army Green</h5>
+						</a>
+						<a class="card" href="#">
+							<img src="img/theodor-4colors.jpg" alt="Theodor" />
+							<h5 class="new-arrival">New arrival</h5>
+							<h5 class="product-name">Theodor</h5>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- product selection section -->
+			<section id="product-selection">
+				<a href="#">
+					<img src="img/men.jpg" alt="" />
+					<h2>For men</h2>
+				</a>
+				<a href="#">
+					<img src="img/women.jpg" alt="" />
+					<h2>For women</h2>
+				</a>
+			</section>
+
+			<!-- product category section -->
+			<section id="product-category">
+				<h2>Category</h2>
+				<div class="product-category-items">
+					<a href="#">
+						<img src="img/boatshoes.png" alt="Boat shoes" />
+						<img src="img/marquins-logo.png" alt=logo">
+						<h4>Boatshoes</h4>
+					</a>
+					<a href="#">
+						<img src="img/loafer.png" alt="Loafer" />
+						<img src="img/marquins-logo.png" alt=logo">
+						<h4>Loafer</h4>
+					</a>
+					<a href="#">
+						<img src="img/boots.png" alt="Boots" />
+						<img src="img/marquins-logo.png" alt=logo">
+						<h4>Boots</h4>
+					</a>
+					<a href="#">
+						<img src="img/slippers.png" alt="Slippers" />
+						<img src="img/marquins-logo.png" alt=logo">
+						<h4>Slippers</h4>
+					</a>
+				</div>
+			</section>
+
+			<!-- keep in touch section -->
+			<section id="keep-in-touch">
+				<h3>Keep in Touch</h3>
+				<form action="#">
+					<input
+						type="email"
+						name="email"
+						placeholder="Enter your email address.."
+					/>
+					<button type="submit">
+						<i class="fas fa-chevron-double-right"></i>
+					</button>
+				</form>
+			</section>
+		</main>
+
+		<!-- company-info-footer -->
+		<footer id="footer">
+			<div class="footer-info">
+				<div>
+					<img src="img/marquins-logo.png" alt="logo" />
+					<p>
+						Marquins is a Filipino brand that produces affordable casual and
+						formal leather shoes. Every pair is made of top quality materials
+						and is handcrafted by our Filipino craftsmen with world-class
+						shoemaking skills.
+					</p>
+				</div>
+				<div>
+					<p class="info"><i class="far fa-store"></i>Marquins Boatshoes</p>
+					<p class="info">
+						<i class="far fa-map-marker-smile"></i>
+						Marikina, Marikina City, Philippines
+					</p>
+					<p class="info">
+						<i class="far fa-door-open"></i>Monday to Saturday, 8AM to 5PM
+					</p>
+					<p class="info">
+						<i class="far fa-envelope"></i>Marquins@boatshoes.com.ph
+					</p>
+					<hr />
+					<p class="social">
+						Social:
+						<a href="https://web.facebook.com/marquinsph/?_rdc=1&_rdr"
+							><i class="fab fa-facebook"></i
+						></a>
+						<a href="https://www.instagram.com/marquinsmnl/?hl=en"
+							><i class="fab fa-instagram"></i
+						></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</p>
+				</div>
+			</div>
+			<p class="footer-copyright">
+				<small>&copy; 2021 Marquins Boatshoes</small>
+			</p>
+		</footer>
+		<div id="modal-container">
+			<div class="modal-login-container">
+				<button id="close-login-container" onclick="closeLoginContainer()">
+					&times;
+				</button>
+				<form class="login-form" name="login-form" action="#">
+					<h3>Log in to your account.</h3>
+					<input type="email" name="email" placeholder="Enter email" />
+					<input type="password" name="password" placeholder="Enter password" />
+					<button type="submit">Log in</button>
+				</form>
+				<form class="signup-form" name="signup-form" action="#">
+					<h3>Don't have an account yet?</h3>
+					<button type="submit">Facebook</button>
+					<button type="submit">Google</button>
+					<button type="submit">Sign up</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
